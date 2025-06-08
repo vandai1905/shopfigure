@@ -1,0 +1,340 @@
+/* Tổng quan */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container, .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Header & Footer */
+header, footer, .header, .footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #d1e8ff;
+}
+
+/* Menu */
+.menu {
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nhóm các mục quản lý về bên trái */
+.menu ul .menu-left {
+    display: flex;
+}
+
+/* Cỡ chữ nhỏ hơn */
+.menu ul li a, .menu ul .menu-right {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hiệu ứng hover */
+.menu ul li a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------- list game------------------------------------*/
+.wrapper {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề bảng */
+.table-title {
+    background-color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Chỉnh bề ngang bảng */
+.table-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+/* Hàng tiêu đề */
+.table-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Hàng chẵn có nền xám nhẹ */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover làm nổi bật */
+table tr:hover {
+    background-color: #d1e8ff;
+    transition: 0.3s;
+}
+
+/* Chỉnh kích thước cột */
+td, th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Chỉnh phần quản lý (Sửa, Xóa) */
+td.d-flex {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*----------------------------------- Nút bấm -------------------------------------------*/
+.btn-add, .btn-submit {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-add:hover, .btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/*----------------------------------- Thêm game (them.php) -------------------------------------------*/
+.form-container {
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Ô nhập liệu */
+.form-control {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Căn giữa form */
+.container {
+    margin: 50px auto; /* Căn giữa theo chiều ngang, cách trên 50px */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút thêm */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Nút quay lại */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Căn giữa nút */
+form {
+    text-align: center;
+}
+
+/*----------------------------------- Sửa game (sua.php) -------------------------------------------*/
+
+/* Nút cập nhật */
+.btn-update {
+    background-color: #ffc107; /* Màu vàng */
+    color: black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-update:hover {
+    background-color: #e0a800;
+}
+
+/* Nút quay lại */
+.btn-back {
+    background-color: #6c757d; /* Màu xám */
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+/*----------------------------------- Phân trang -------------------------------------------*/
+.pagination {
+    margin-top: 20px;
+   display: flex;
+    justify-content: center; 
+    gap: 5px;
+}
+
+/* Style cho các nút */
+.pagination .btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* Hiệu ứng khi di chuột vào */
+.pagination .btn:hover {
+    background: #0056b3;
+}
+
+/* Trang hiện tại */
+.pagination .active {
+    background: #ff5722;
+    pointer-events: none;
+}
+
+/* Nút "Trước" và "Tiếp" */
+.pagination .prev, .pagination .next {
+    background: #28a745;
+}
+
+.pagination .prev:hover, .pagination .next:hover {
+    background: #218838;
+}
+
+/* Khi không thể bấm */
+.pagination .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Căn giữa các form để tránh bị lệch */
+.pagination form {
+    display: inline-block;
+}
